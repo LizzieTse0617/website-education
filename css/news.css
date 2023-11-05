@@ -1,0 +1,49 @@
+.news {
+  background-color: var(--primary-color);
+  color: var(--white);
+}
+
+.news__container {
+  width: min(80rem, 100%);
+  display: grid;
+  margin: 0 auto;
+}
+
+.announcement {
+  margin: 0;
+  padding: 1rem 1.5rem;
+  justify-content: center;
+}
+
+.whatsapp {
+  display: flex;
+
+  justify-content: end;
+}
+
+.whatsapp img {
+  justify-content: end;
+  margin-left: 1.5rem;
+}
+
+.whatsapp_text {
+  margin: auto;
+  margin-left: 0;
+}
+
+@media only screen and (min-width: 45em) {
+  .news__container {
+    grid-template-areas: 'announcement whatsapp';
+  }
+  .whatsapp {
+    justify-content: end;
+  }
+  .whatsapp_text {
+    margin: auto;
+    margin-left: 0;
+    margin-right: 1.5rem;
+  }
+}
+
+@media only screen and (min-width: 60em) {
+}

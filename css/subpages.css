@@ -1,0 +1,260 @@
+.students h1,
+.students_achievement h1,
+.group_lesson h1,
+.teaching__subjects h1,
+.tutor__profile h1,
+.home_online h1 {
+  font-size: 1.852rem;
+  text-align: left;
+  font-weight: 550;
+  text-transform: uppercase;
+}
+
+.group_lesson {
+  background-color: var(--secondary-color);
+  color: var(--white);
+}
+
+.home_online {
+  background-color: var(--lightgrey);
+  color: var(--darkgrey);
+}
+
+.home_online h1,
+.students h1 {
+  margin-bottom: 2rem;
+}
+.teaching__subjects {
+  background-color: var(--white);
+  color: var(--darkgrey);
+}
+
+.students ul {
+  display: flex;
+  flex-wrap: wrap;
+  list-style-type: none;
+  gap: 3rem;
+}
+
+.students,
+.home_online {
+  background-color: var(--lightgrey);
+}
+
+.students li span {
+  font-size: larger;
+  font-weight: 700;
+  text-decoration: none;
+}
+
+.teaching__subjects ul {
+  display: flex;
+  flex-wrap: wrap;
+  list-style-type: none;
+  gap: 15px;
+}
+
+.teaching__subjects li {
+  color: var(--darkgrey);
+  background-color: var(--lightgrey);
+  width: 10rem;
+  padding: 2rem 0;
+  text-align: center;
+  font-size: larger;
+}
+
+.students li:hover,
+.teaching__subjects li:hover {
+  background-color: var(--lightpurple);
+  color: var(--highlight-purple);
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.banner__text h2,
+.tutor__profile h2,
+.teaching__subjects h2,
+.group_lesson h2 {
+  color: var(--highlight-purple);
+  background-color: var(--lightpurple);
+  padding: 0.7rem;
+  font-size: 1.2rem;
+  font-weight: 500;
+  grid-area: heading;
+  font-weight: 700;
+  border-radius: 0.5rem;
+  text-align: left;
+  display: inline-block;
+  margin-bottom: 2rem;
+}
+
+.banner__text p {
+  margin: 1rem 0;
+}
+
+.btn_award button,
+.link_student {
+  color: var(--white);
+  padding: 0.7rem;
+  font-size: 1.2rem;
+  font-weight: 400;
+  display: inline-block;
+  cursor: pointer;
+  background-color: var(--green);
+  border-radius: 0.5rem;
+  border: none;
+}
+
+.btn_award button:hover,
+.link_student:hover {
+  background-color: var(--highlight-purple);
+}
+.btn_btn_award {
+  font-size: 1.2rem;
+
+  cursor: pointer;
+  font-weight: 400;
+  font-weight: 600;
+}
+
+/*footer styles */
+
+.footer {
+  background-color: var(--primary-color);
+  color: #fff;
+}
+
+.footer .container {
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.footer a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.footer a:hover,
+.footer a:focus-visible {
+  color: var(--highlight-purple);
+}
+
+.footer .logo {
+  display: flex;
+  gap: 0.75rem;
+  align-items: center;
+}
+
+.footer .logo__img {
+  width: 9rem;
+}
+
+.footer .logo__text {
+  font-size: 1.525rem;
+  font-weight: bold;
+}
+
+.footer ul {
+  list-style: none;
+  margin: 0;
+  border-left: 0.125rem solid var(--lightpurple);
+  padding-left: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+
+.students li {
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 10px 50px -20px,
+    rgba(0, 0, 0, 0.05) 0px 20px 20px -10px;
+  border-radius: 1.5rem;
+  padding: 2rem;
+  flex: 1 1 0px;
+}
+
+.students ul {
+  flex-direction: column;
+}
+.topic_container {
+  display: grid;
+  grid-template-areas:
+    'text_award'
+    'btn_award';
+}
+
+.text_award {
+  padding-bottom: 2rem;
+}
+.btn_award {
+  text-align: left;
+  padding-bottom: 2rem;
+}
+@media only screen and (min-width: 45em) {
+  .students ul {
+    flex-direction: column;
+  }
+  .btn_award {
+    text-align: right;
+  }
+  .footer .container {
+    flex-direction: row;
+    align-items: flex-start;
+  }
+
+  .footer .logo {
+    flex: 2 0;
+  }
+
+  .footer nav,
+  .footer small {
+    flex: 1 0;
+  }
+
+  .topic_container {
+    grid-template-areas: 'text_award btn_award';
+  }
+}
+
+.results,
+.award_list_container,
+.top-nav,
+.banner__container,
+.tutor__container,
+.teaching__container,
+.container,
+.students_box__container,
+.group_lesson_container,
+.home_online_container {
+  width: min(80rem, 100%);
+  margin: 0 auto;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  padding-top: 6rem;
+  padding-bottom: 8rem;
+}
+
+@media only screen and (min-width: 60em) {
+  .students ul {
+    flex-direction: row;
+  }
+}
+
+table {
+  font-family: arial, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+}
+
+td,
+th {
+  border: 1px solid #dddddd;
+  text-align: left;
+  padding: 8px;
+}
+
+tr:nth-child(even) {
+  background-color: #dddddd;
+}
