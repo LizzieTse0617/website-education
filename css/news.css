@@ -10,6 +10,11 @@
   margin: 0 auto;
 }
 
+.topnav {
+  width: min(80rem, 100%);
+  margin: 0 auto;
+}
+
 .announcement {
   margin: 0;
   padding: 0.5rem;
