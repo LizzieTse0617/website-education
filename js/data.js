@@ -31,7 +31,7 @@ const result = [
       {
         order: 3,
         subject: 'AP Physic 2',
-        heading: 'q00% students got Level 5 & 4',
+        heading: '100% students got Level 5 & 4',
         level5: 1,
         level4: 1,
         students_ICS: ['Poon', 'Wong'],
