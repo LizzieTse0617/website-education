@@ -4,8 +4,14 @@ document.getElementById('myBtn').addEventListener('click', () => {
   window.scrollTo(0, 0);
 });
 
+document.getElementById('icon').addEventListener('click', () => {
+  navHide();
+});
+
 function init() {
   collapseBox();
+
+  /* NAV LINK */
 
   // Array of different class names to handle
   const classList = [
@@ -14,7 +20,6 @@ function init() {
     '.AP2021__all',
     '.AP2020__all',
     '.AP2019__all',
-    '.StudentPage2023__all',
   ]; // Add any additional class names
 
   const data = [
@@ -64,6 +69,19 @@ function collapseBox() {
     };
   }
   accordions[0].click();
+}
+
+function navHide() {
+  const x = document.getElementById('myTopnav');
+
+  // Check if the 'responsive' class is present
+  if (x.classList.contains('responsive')) {
+    // If it's already responsive, remove 'responsive' class to close the menu
+    x.classList.remove('responsive');
+  } else {
+    // If it's not responsive, add 'responsive' class to open the menu
+    x.classList.add('responsive');
+  }
 }
 
 document.addEventListener('DOMContentLoaded', init);
